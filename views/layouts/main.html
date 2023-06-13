@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express-Nunjucks App</title>
+</head>
+<body>
+    {% include 'partials/navbar.html' %}
+
+    <header>
+        {% block header %}{% endblock %}
+    </header>
+
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+
+    {% include 'partials/footer.html' %}
+</body>
+</html> 

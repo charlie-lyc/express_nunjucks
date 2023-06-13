@@ -1,0 +1,16 @@
+{% extends 'layouts/main.html' %}
+
+{% block header %}
+    <h1>Express-Nunjucks Application.</h1>
+{% endblock %}
+
+{% block main %}
+    <div>
+        Menu
+        <a href="/signin" id="signin">Sign In</a>
+    </div>
+    <div id="greet"></div>
+
+    <script src="js/home.js"></script>
+{% endblock %}
+
