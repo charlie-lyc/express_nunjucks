@@ -1,10 +1,12 @@
 onload = () => {
-    const greet = document.getElementById('greet')
+    const msg = document.getElementById('msg')
     fetch('/api')
         .then(res => res.json())
-        .then(data => greet.textContent = data.msg)
+        .then(data => msg.textContent = data.msg)
         .catch(err => console.log(err))
 
     // const signin = document.getElementById('signin')
     // signin.addEventListener('click', () => location.href = '/signin')
+    // const signup = document.getElementById('signup')
+    // signup.addEventListener('click', () => location.href = '/signup')
 }

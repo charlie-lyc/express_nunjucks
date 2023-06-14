@@ -26,8 +26,12 @@ app.set('views', path.join(__dirname, 'views'))
 // app.get('/api/signin', (req, res) => {
 //     res.status(200).json({ msg: 'user logged in'})
 // })
+
 app.use('/api', require('./routes/api/home'))
-app.use('/api/signin', require('./routes/api/signin'))
+// app.use('/api/signin', require('./routes/api/signin'))
+// app.use('/api/signup', require('./routes/api/signup'))
+// app.use('/api/signout', require('./routes/api/signout'))
+app.use('/api/auth', require('./routes/api/auth'))
 
 
 /**
@@ -39,8 +43,14 @@ app.use('/api/signin', require('./routes/api/signin'))
 // app.get('/signin', (req, res) => {
 //     res.render('pages/signin')
 // })
+// app.get('/signup', (req, res) => {
+//     res.render('pages/signup')
+// })
+
 app.use('/', require('./routes/home'))
 app.use('/signin', require('./routes/signin'))
+app.use('/signup', require('./routes/signup'))
+app.use('/signout', require('./routes/signout'))
 
 //////////////////////////////////////////////////////////////////
 // app.get('*', (req, res) => {
