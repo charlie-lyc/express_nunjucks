@@ -1,4 +1,5 @@
 onload = () => {
+    
     const msg = document.getElementById('msg')
     // fetch('/api/signin')
     fetch('/api/auth/signin')
