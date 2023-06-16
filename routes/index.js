@@ -15,5 +15,8 @@ router.get('/signup', (req, res) => {
 router.get('/signout', (req, res) => {
     res.render('pages/signout')
 })
+router.get('/playground', (req, res) => {
+    res.render('pages/playground')
+})
 
 module.exports = router
